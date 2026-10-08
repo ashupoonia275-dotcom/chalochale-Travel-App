@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages - ChaloChale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/007ca9e9e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+        }
+        .package-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .page-header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        .package-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .package-card .card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 1.5rem;
+        }
+        .package-card .card-body {
+            padding: 2rem;
+        }
+        .price-tag {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+        .price-period {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+        .feature-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        .feature-list i {
+            color: #28a745;
+            margin-right: 0.5rem;
+        }
+        .btn-book {
+            transition: all 0.3s ease;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+        }
+        .btn-book:hover {
+            transform: scale(1.02);
+        }
+        .popular-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #f5576c;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container">
+            <a href="#" class="navbar-brand fw-bold">
+                <i class="fa-solid fa-plane-departure"></i> ChaloChale
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li>
+                    <li class="nav-item"><a href="booking.html" class="nav-link">Booking</a></li>
+                    <li class="nav-item"><a href="packages.html" class="nav-link active">Packages</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0">
+                    <a href="signup.html" class="btn btn-warning">Sign Up</a>
+                    <a href="login.html" class="btn btn-outline-light">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header py-5 text-center">
+        <div class="container">
+            <h1 class="fw-bold display-5 mb-3">Travel Packages</h1>
+            <p class="lead mb-0">Choose your perfect travel plan at the best price</p>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="package-section py-5">
+        <div class="container">
+            <div class="row g-4 g-lg-5">
+
+                <!-- Package 1: Goa Beach -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card shadow h-100 package-card card-hover">
+                        <div class="card-header">
+                            <h5 class="fw-bold mb-0">Goa Beach Package</h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="text-center mb-3">
+                                <span class="price-tag">$1500</span>
+                                <span class="price-period">/ person</span>
+                            </div>
+                            <p class="text-muted text-center mb-3">Duration: 5 Days / 4 Nights</p>
+                            <ul class="feature-list flex-grow-1">
+                                <li><i class="fas fa-check"></i> Beachside Resort Stay</li>
+                                <li><i class="fas fa-check"></i> Airport Transfers</li>
+                                <li><i class="fas fa-check"></i> Water Sports Activities</li>
+                                <li><i class="fas fa-check"></i> Sightseeing Tours</li>
+                                <li><i class="fas fa-check"></i> Breakfast Included</li>
+                            </ul>
+                            <a href="booking.html" class="btn btn-primary w-100 mt-auto btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2: Manali Adventure -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card shadow h-100 package-card card-hover position-relative">
+                        <span class="popular-badge">Best Seller</span>
+                        <div class="card-header">
+                            <h5 class="fw-bold mb-0">Manali Adventure</h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="text-center mb-3">
+                                <span class="price-tag">$1400</span>
+                                <span class="price-period">/ person</span>
+                            </div>
+                            <p class="text-muted text-center mb-3">Duration: 5 Days / 4 Nights</p>
+                            <ul class="feature-list flex-grow-1">
+                                <li><i class="fas fa-check"></i> Mountain View Hotel</li>
+                                <li><i class="fas fa-check"></i> Adventure Activities</li>
+                                <li><i class="fas fa-check"></i> Snow Point Visit</li>
+                                <li><i class="fas fa-check"></i> Rohtang Pass Tour</li>
+                                <li><i class="fas fa-check"></i> All Meals Included</li>
+                            </ul>
+                            <a href="booking.html" class="btn btn-primary w-100 mt-auto btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3: Kerala Backwater -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card shadow h-100 package-card card-hover">
+                        <div class="card-header">
+                            <h5 class="fw-bold mb-0">Kerala Backwater</h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="text-center mb-3">
+                                <span class="price-tag">$1350</span>
+                                <span class="price-period">/ person</span>
+                            </div>
+                            <p class="text-muted text-center mb-3">Duration: 5 Days / 4 Nights</p>
+                            <ul class="feature-list flex-grow-1">
+                                <li><i class="fas fa-check"></i> Houseboat Stay</li>
+                                <li><i class="fas fa-check"></i> Backwater Cruise</li>
+                                <li><i class="fas fa-check"></i> Ayurvedic Spa</li>
+                                <li><i class="fas fa-check"></i> Tea Plantation Visit</li>
+                                <li><i class="fas fa-check"></i> Traditional Meals</li>
+                            </ul>
+                            <a href="booking.html" class="btn btn-primary w-100 mt-auto btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 4: Rajasthan Heritage -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card shadow h-100 package-card card-hover">
+                        <div class="card-header">
+                            <h5 class="fw-bold mb-0">Rajasthan Heritage</h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="text-center mb-3">
+                                <span class="price-tag">$1800</span>
+                                <span class="price-period">/ person</span>
+                            </div>
+                            <p class="text-muted text-center mb-3">Duration: 6 Days / 5 Nights</p>
+                            <ul class="feature-list flex-grow-1">
+                                <li><i class="fas fa-check"></i> Heritage Hotel Stay</li>
+                                <li><i class="fas fa-check"></i> Fort & Palace Tours</li>
+                                <li><i class="fas fa-check"></i> Desert Safari</li>
+                                <li><i class="fas fa-check"></i> Cultural Shows</li>
+                                <li><i class="fas fa-check"></i> Royal Dining Experience</li>
+                            </ul>
+                            <a href="booking.html" class="btn btn-primary w-100 mt-auto btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 5: Himalayan Trek -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card shadow h-100 package-card card-hover">
+                        <div class="card-header">
+                            <h5 class="fw-bold mb-0">Himalayan Trek</h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="text-center mb-3">
+                                <span class="price-tag">$2200</span>
+                                <span class="price-period">/ person</span>
+                            </div>
+                            <p class="text-muted text-center mb-3">Duration: 7 Days / 6 Nights</p>
+                            <ul class="feature-list flex-grow-1">
+                                <li><i class="fas fa-check"></i> Professional Guide</li>
+                                <li><i class="fas fa-check"></i> Camping Equipment</li>
+                                <li><i class="fas fa-check"></i> Trekking Gear</li>
+                                <li><i class="fas fa-check"></i> Mountain Meals</li>
+                                <li><i class="fas fa-check"></i> First Aid Support</li>
+                            </ul>
+                            <a href="booking.html" class="btn btn-primary w-100 mt-auto btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 6: South India Tour -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card shadow h-100 package-card card-hover position-relative">
+                        <span class="popular-badge">Popular</span>
+                        <div class="card-header">
+                            <h5 class="fw-bold mb-0">South India Tour</h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="text-center mb-3">
+                                <span class="price-tag">$1600</span>
+                                <span class="price-period">/ person</span>
+                            </div>
+                            <p class="text-muted text-center mb-3">Duration: 6 Days / 5 Nights</p>
+                            <ul class="feature-list flex-grow-1">
+                                <li><i class="fas fa-check"></i> Temple Tours</li>
+                                <li><i class="fas fa-check"></i> Ooty Hill Station</li>
+                                <li><i class="fas fa-check"></i> Mysore Palace Visit</li>
+                                <li><i class="fas fa-check"></i> Coffee Plantation</li>
+                                <li><i class="fas fa-check"></i> South Indian Cuisine</li>
+                            </ul>
+                            <a href="booking.html" class="btn btn-primary w-100 mt-auto btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">© 2026 ChaloChale Travel App | Designed with Bootstrap</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
